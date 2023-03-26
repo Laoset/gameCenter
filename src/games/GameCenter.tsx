@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Memotest from "./Memotest";
 import Pokemon from "./Pokemon";
 import WordsPerMinute from "./WordsPerMinute";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const GameCenter = () => {
   const [selectedGame, setSelectedGame] = useState("");
@@ -11,9 +11,32 @@ const GameCenter = () => {
     setSelectedGame(game);
   };
   return (
-    <main className="flex justify-center text-center flex-col gap-10 p-5 w-full">
-      <div className="flex justify-center text-center flex-col">
-        <h1 className="text-8xl font-bold bg-nuevoBg text-transparent bg-clip-text">
+    <main className="flex justify-center text-center flex-col gap-8 p-5 w-full">
+      <div className="flex justify-center text-center flex-col ">
+        <div className="flex flex-row justify-between gap-8 align-middle text-center items-center">
+          <h1 className="hover:animate-pulse text-demas text-5xl font-marca  text-left">
+            #AKCS
+          </h1>
+          <div className="flex flex-row gap-8">
+            <a
+              href="https://github.com/Laoset"
+              className="text-white cursor-pointer hover:scale-110 duration-200 italic tracking-tight"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub size="1.5rem" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alan-kevin-corman-samanamud-22b566176/"
+              className="text-white  cursor-pointer hover:scale-110 duration-200 italic tracking-tight"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin size="1.5rem" />
+            </a>
+          </div>
+        </div>
+        <h1 className="text-[90px] font-bold bg-nuevoBg text-transparent bg-clip-text">
           GAME CENTER
         </h1>
       </div>
