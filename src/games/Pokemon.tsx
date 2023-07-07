@@ -101,7 +101,7 @@ const Pokemon = () => {
           value={inputValue}
           type="text"
           onChange={handleInputChange}
-          className="p-3 rounded-md self-center w-2/4"
+          className="p-3 rounded-md self-center w-2/4 text-black"
         />
       </form>
 

@@ -80,7 +80,7 @@ const WordsPerMinute = () => {
               type="text"
               value={data}
               onChange={(e) => setData(e.target.value)}
-              className="p-3 rounded-md"
+              className="p-3 rounded-md text-black"
             ></input>
             <button type="submit"></button>
           </form>
